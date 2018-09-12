@@ -77,7 +77,7 @@ app.use(cors(
 app.use('/users',users);
 
 app.use('*', (req, res) => {
-	res.status(401).json({message: 'URL Not found '});
+	res.status(401).json({message: 'Nothing'});
 });
 
 app.listen(port, appEnv.bind, () => {
